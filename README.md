@@ -13,5 +13,3 @@ Key techniques:
 - Throughput gains via parallelism and pipelining.
 
 **Results:** Efficient use of embedded multipliers and memory, verified through ModelSim simulation, Quartus synthesis, and FPGA resource utilization reports.
-
-This work highlights my ability to **design, debug, and optimize digital signal processing pipelines in Verilog**, with a focus on performance vs. resource trade-offs.

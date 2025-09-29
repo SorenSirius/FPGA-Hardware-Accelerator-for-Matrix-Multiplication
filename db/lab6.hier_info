@@ -1,0 +1,182 @@
+|lab6
+HEX0[0] <= roll:inst7.HEX0[0]
+HEX0[1] <= roll:inst7.HEX0[1]
+HEX0[2] <= roll:inst7.HEX0[2]
+HEX0[3] <= roll:inst7.HEX0[3]
+HEX0[4] <= roll:inst7.HEX0[4]
+HEX0[5] <= roll:inst7.HEX0[5]
+HEX0[6] <= roll:inst7.HEX0[6]
+KEY[0] => roll:inst7.KEY[0]
+KEY[0] => turnCounter:inst.CLK
+KEY[1] => roll:inst7.pin_name1
+KEY[1] => turnCounter:inst.ENA
+SW[0] => roll:inst7.KEY[1]
+HEX4[6] <= turnCounter:inst.HEX_L[6]
+HEX4[5] <= turnCounter:inst.HEX_L[5]
+HEX4[4] <= turnCounter:inst.HEX_L[4]
+HEX4[3] <= turnCounter:inst.HEX_L[3]
+HEX4[2] <= turnCounter:inst.HEX_L[2]
+HEX4[1] <= turnCounter:inst.HEX_L[1]
+HEX4[0] <= turnCounter:inst.HEX_L[0]
+HEX5[6] <= turnCounter:inst.HEX_U[6]
+HEX5[5] <= turnCounter:inst.HEX_U[5]
+HEX5[4] <= turnCounter:inst.HEX_U[4]
+HEX5[3] <= turnCounter:inst.HEX_U[3]
+HEX5[2] <= turnCounter:inst.HEX_U[2]
+HEX5[1] <= turnCounter:inst.HEX_U[1]
+HEX5[0] <= turnCounter:inst.HEX_U[0]
+
+
+|lab6|roll:inst7
+Q2 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+KEY[0] => inst13.IN0
+KEY[1] => inst.ACLR
+KEY[1] => inst1.ACLR
+KEY[1] => inst2.ACLR
+pin_name1 => inst20.IN1
+pin_name1 => inst21.IN1
+pin_name1 => inst19.IN1
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= 7447:inst12.OA
+HEX0[1] <= 7447:inst12.OB
+HEX0[2] <= 7447:inst12.OC
+HEX0[3] <= 7447:inst12.OD
+HEX0[4] <= 7447:inst12.OE
+HEX0[5] <= 7447:inst12.OF
+HEX0[6] <= 7447:inst12.OG
+
+
+|lab6|roll:inst7|7447:inst12
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|turnCounter:inst
+HEX_L[6] <= 7447:inst1.OG
+HEX_L[5] <= 7447:inst1.OF
+HEX_L[4] <= 7447:inst1.OE
+HEX_L[3] <= 7447:inst1.OD
+HEX_L[2] <= 7447:inst1.OC
+HEX_L[1] <= 7447:inst1.OB
+HEX_L[0] <= 7447:inst1.OA
+CLK => inst4.IN0
+CLK => inst17.IN0
+CLK => 74190:inst2.CLK
+ENA => inst4.IN1
+HEX_U[6] <= 7447:inst11.OG
+HEX_U[5] <= 7447:inst11.OF
+HEX_U[4] <= 7447:inst11.OE
+HEX_U[3] <= 7447:inst11.OD
+HEX_U[2] <= 7447:inst11.OC
+HEX_U[1] <= 7447:inst11.OB
+HEX_U[0] <= 7447:inst11.OA
+
+
+|lab6|turnCounter:inst|7447:inst1
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|turnCounter:inst|74190:inst
+RCON <= 58.DB_MAX_OUTPUT_PORT_TYPE
+D => 20.IN0
+LDN => 32.IN0
+CLK => 51.CLK
+CLK => 48.CLK
+CLK => 49.CLK
+CLK => 50.CLK
+CLK => 29.IN0
+GN => 13.IN0
+GN => 37.IN0
+GN => 12.IN1
+DNUP => 30.IN0
+A => 26.IN0
+B => 24.IN0
+C => 22.IN0
+MXMN <= 41.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 48.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 49.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 50.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 51.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|turnCounter:inst|7447:inst11
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|turnCounter:inst|74190:inst2
+RCON <= 58.DB_MAX_OUTPUT_PORT_TYPE
+D => 20.IN0
+LDN => 32.IN0
+CLK => 51.CLK
+CLK => 48.CLK
+CLK => 49.CLK
+CLK => 50.CLK
+CLK => 29.IN0
+GN => 13.IN0
+GN => 37.IN0
+GN => 12.IN1
+DNUP => 30.IN0
+A => 26.IN0
+B => 24.IN0
+C => 22.IN0
+MXMN <= 41.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 48.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 49.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 50.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 51.DB_MAX_OUTPUT_PORT_TYPE
+
+
